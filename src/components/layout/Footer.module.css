@@ -1,5 +1,7 @@
-.footer {
-}
+
+/* .footer {
+} */
+
 
 .footer__inner {
     background-color: #fff;
@@ -66,3 +68,4 @@
     gap: 18px;
     align-items: center;
 }
+
