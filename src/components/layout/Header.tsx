@@ -1,0 +1,34 @@
+// import { Link } from "react-router-dom";
+import { CartIcon } from "../cartIcon";
+import styles from "./Header.module.css";
+
+export const Header = () => {
+    const cartCount = 2; // Временно
+
+    return (
+        <header className={styles.header}>
+            <div className={`container ${styles["header__inner"]}`}>
+                <h1 className={styles.title}>QPICK</h1>
+                <nav className={styles.menu}>
+                    <div className={styles.favorites}>
+                        <svg
+                            width="62"
+                            height="60"
+                            viewBox="0 0 62 60"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M31.332 22.0293C33.7207 19.9198 37.4154 19.9903 39.7158 22.2568C42.012 24.5214 42.0896 28.1216 39.957 30.4727L30.998 39.2969L22.0352 30.4668C19.909 28.1155 19.9914 24.5134 22.2832 22.2578C24.5863 19.9935 28.2738 19.9167 30.6699 22.0293L31.001 22.3213L31.332 22.0293ZM38.8604 23.0732C37.0229 21.2636 34.0631 21.1906 32.1396 22.8896L31.001 23.8936L29.8633 22.8906C27.9344 21.1897 24.9804 21.2639 23.1387 23.0752C21.3103 24.8736 21.2168 27.7567 22.9033 29.6611L22.915 29.6738L22.9268 29.6855L30.6484 37.293L31 37.6387L31.3506 37.293L39.0723 29.6865L39.085 29.6748L39.0957 29.6621C40.7839 27.7563 40.6903 24.8768 38.8604 23.0732Z"
+                                fill="#838383"
+                                stroke="black"
+                            />
+                        </svg>
+                        <span className={styles["favorites__badge"]}>2</span>
+                    </div>
+                    <CartIcon count={cartCount} />
+                </nav>
+            </div>
+        </header>
+    );
+};

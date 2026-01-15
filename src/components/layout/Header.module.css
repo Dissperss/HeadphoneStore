@@ -1,0 +1,32 @@
+.header {
+    padding-top: 15px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 25px;
+    color: #101010;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.favorites {
+    position: relative;
+}
+
+.favorites__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
