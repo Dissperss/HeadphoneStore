@@ -1,4 +1,4 @@
-const headphones = [
+export const headphones = [
     {
         id: 0,
         img: "../assets/img/apple_byz_s852ipng.png",
