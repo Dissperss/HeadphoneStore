@@ -1,4 +1,5 @@
 import { ProductCard } from "../productCard";
+import styles from "./ProductList.module.css";
 
 type ProductListProps = {
     data: Product[];
@@ -20,10 +21,18 @@ export const ProductList = ({ data }: ProductListProps) => {
         return <p className="nothing">Nothing found</p>;
     }
 
-    const elements = data.map((item) => {
-        const { id, ...itemProps } = item;
-        return <ProductCard key={id} {...itemProps} />;
-    });
+    // const elements = data.map((item) => {
+    //     const { id, ...itemProps } = item;
+    //     return <ProductCard key={id} {...itemProps} />;
+    // });
 
-    return <ul className="products__list">{elements}</ul>;
+    return (
+        <ul className={styles["products__list"]}>
+            {data.map(({ id, ...itemProps }) => (
+                <li key={id} className={styles["products__item"]}>
+                    <ProductCard {...itemProps} />
+                </li>
+            ))}
+        </ul>
+    );
 };
