@@ -1,16 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "./provides/Layout";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/Router";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />} />
-                {/* <Route index element={<Home/>}/> */}
-                {/* <Route path='/cart' element={<Cart/>}/> */}
-            </Routes>
-        </BrowserRouter>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
