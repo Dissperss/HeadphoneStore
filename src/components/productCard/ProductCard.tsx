@@ -1,4 +1,4 @@
-// import styles from "./ProductCard.module.css";
+import styles from "./ProductCard.module.css";
 
 import { StarIcon } from "../icons";
 
@@ -17,21 +17,29 @@ type Price = {
 export const ProductCard = ({ img, title, price, rate }: ProductCardProps) => {
     const { actual, previous } = price;
     return (
-        <div className="card">
-            <div className="card__inner">
-                <img className="card__img" src={img} alt={title} />
-                <h3 className="card__title">{title}</h3>
-                <div className="card__prices">
-                    <span className="card__price">{actual} ₽</span>
-                    {previous && (
-                        <span className="card__price-old">{previous} ₽</span>
-                    )}
+        <div className={styles.card}>
+            <div className={styles["card__inner"]}>
+                <img className={styles["card__img"]} src={img} alt={title} />
+                <div className={styles["card__info"]}>
+                    <h3 className={styles["card__title"]}>{title}</h3>
+                    <div className={styles["card__prices"]}>
+                        <span className={styles["card__price-actual"]}>
+                            {actual} ₽
+                        </span>
+                        {previous && (
+                            <span className={styles["card__price-old"]}>
+                                {previous} ₽
+                            </span>
+                        )}
+                    </div>
                 </div>
 
-                <div className="card__footer">
-                    <StarIcon />
-                    <span className="card__rating">{rate}</span>
-                    <button className="card__btn">Купить</button>
+                <div className={styles["card__footer"]}>
+                    <div className={styles.rate}>
+                        <StarIcon />
+                        <span className={styles["card__rating"]}>{rate}</span>
+                    </div>
+                    <button className={styles["card__btn"]}>Купить</button>
                 </div>
             </div>
         </div>
