@@ -20,22 +20,3 @@
     gap: 25px;
     align-items: center;
 }
-
-.favorites {
-    position: relative;
-}
-
-.favorites__badge {
-    position: absolute;
-    top: 9px;
-    right: 7px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 15px;
-    text-align: center;
-    color: #fff;
-    border-radius: 100%;
-    background-color: #ffa542;
-    max-width: 20px;
-    width: 100%;
-}

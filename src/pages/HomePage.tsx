@@ -1,5 +1,6 @@
 import { ProductList } from "../components/productList";
 import { headphones } from "../stabs/products";
+import styles from "./HomePage.module.css";
 
 export const HomePage = () => {
     const wired = headphones.filter((item) => item.type === "wired");
@@ -7,12 +8,12 @@ export const HomePage = () => {
     const wireless = headphones.filter((item) => item.type === "wireless");
 
     return (
-        <>
-            <h2 className="title">Наушники</h2>
+        <div className={styles.catalog}>
+            <h2 className={styles.title}>Наушники</h2>
             <ProductList data={wired} />
 
-            <h2 className="title">Беспроводные наушники</h2>
+            <h2 className={styles.subtitle}>Беспроводные наушники</h2>
             <ProductList data={wireless} />
-        </>
+        </div>
     );
 };
