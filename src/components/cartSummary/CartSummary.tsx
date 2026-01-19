@@ -1,11 +1,15 @@
+import styles from "./CartSummary.module.css";
+
 export const CartSummary = () => {
     return (
-        <div className="cart__summary">
-            <div className="cart__header">
-                <span className="cart__text">итого</span>
-                <span className="cart__result-sum">2927 ₽</span>
+        <div className={styles.cart__summary}>
+            <div className={styles.cart__header}>
+                <span className={styles.cart__text}>итого</span>
+                <span className={styles.cart__result_sum}>2927 ₽</span>
             </div>
-            <button className="checkout__btn">Перейти к оформлению</button>
+            <button className={styles.checkout__btn}>
+                Перейти к оформлению
+            </button>
         </div>
     );
 };

@@ -1,0 +1,27 @@
+.cart {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1c1c27;
+}
+
+.cart__wrapper {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cart__list {
+    max-width: 630px;
+    width: 100%;
+}
+
+.cart__summary {
+    max-width: 350px;
+    width: 100%;
+}
