@@ -27,9 +27,9 @@ export const ProductList = ({ data }: ProductListProps) => {
     // });
 
     return (
-        <ul className={styles["products__list"]}>
+        <ul className={styles.products__list}>
             {data.map(({ id, ...itemProps }) => (
-                <li key={id} className={styles["products__item"]}>
+                <li key={id} className={styles.products__item}>
                     <ProductCard {...itemProps} />
                 </li>
             ))}

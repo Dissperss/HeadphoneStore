@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 
-.card__img-wrapper {
+.card__img_wrapper {
     height: 220px;
     display: flex;
     align-items: center;
@@ -49,13 +49,13 @@
     align-items: center;
 }
 
-.card__price-actual {
+.card__price_actual {
     font-weight: 600;
     font-size: 17px;
     color: #ffa542;
 }
 
-.card__price-old {
+.card__price_old {
     font-weight: 600;
     font-size: 13px;
     text-decoration: line-through;
