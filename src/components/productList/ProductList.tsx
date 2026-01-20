@@ -1,10 +1,6 @@
 import { ProductCard } from "../productCard";
 import styles from "./ProductList.module.css";
 
-type ProductListProps = {
-    data: Product[];
-};
-
 type Product = {
     id: number;
     img: string;
@@ -14,6 +10,10 @@ type Product = {
         previous?: number;
     };
     rate: number;
+};
+
+type ProductListProps = {
+    data: Product[];
 };
 
 export const ProductList = ({ data }: ProductListProps) => {
@@ -28,9 +28,15 @@ export const ProductList = ({ data }: ProductListProps) => {
 
     return (
         <ul className={styles.products__list}>
-            {data.map(({ id, ...itemProps }) => (
-                <li key={id} className={styles.products__item}>
-                    <ProductCard {...itemProps} />
+            {data.map((product) => (
+                <li key={product.id} className={styles.products__item}>
+                    <ProductCard
+                        id={product.id}
+                        img={product.img}
+                        title={product.title}
+                        price={product.price}
+                        rate={product.rate}
+                    />
                 </li>
             ))}
         </ul>

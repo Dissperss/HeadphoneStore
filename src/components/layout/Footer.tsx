@@ -6,7 +6,9 @@ export const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={`container ${styles.footer__inner}`}>
-                <MainLogo />
+                <Link to="/">
+                    <MainLogo />
+                </Link>
 
                 <nav className={styles.footer__menu}>
                     <a href="#" className={styles.menu__link}>

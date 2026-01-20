@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { StarIcon } from "../icons";
 
+import { CartContext } from "../../context/cart/cartContext";
 import styles from "./ProductCard.module.css";
 
 type ProductCardProps = {
+    id: number;
     img: string;
     title: string;
     price: Price;
@@ -14,8 +17,25 @@ type Price = {
     previous?: number;
 };
 
-export const ProductCard = ({ img, title, price, rate }: ProductCardProps) => {
+export const ProductCard = ({
+    img,
+    title,
+    price,
+    rate,
+    id,
+}: ProductCardProps) => {
     const { actual, previous } = price;
+    const { addToCart } = useContext(CartContext);
+
+    const handleAddToCart = () => {
+        addToCart({
+            id,
+            title,
+            price: actual,
+            img,
+        });
+    };
+
     return (
         <div className={styles.card}>
             <div className={styles.card__inner}>
@@ -42,7 +62,9 @@ export const ProductCard = ({ img, title, price, rate }: ProductCardProps) => {
                     <StarIcon />
                     <span className={styles.card__rating}>{rate}</span>
                 </div>
-                <button className={styles.card__btn}>Купить</button>
+                <button className={styles.card__btn} onClick={handleAddToCart}>
+                    Купить
+                </button>
             </div>
         </div>
     );
