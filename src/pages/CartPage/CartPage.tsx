@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { CartItem } from "../components/cartItem";
-import { CartSummary } from "../components/cartSummary";
-import { CartContext } from "../context/cart/cartContext";
+import { CartItem } from "../../components/cartItem";
+import { CartSummary } from "../../components/cartSummary";
+import { CartContext } from "../../context/cart/cartContext";
 
 import styles from "./CartPage.module.css";
 
