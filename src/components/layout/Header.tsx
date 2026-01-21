@@ -8,8 +8,9 @@ import { MainLogo } from "../icons";
 import styles from "./Header.module.css";
 
 export const Header = () => {
-    const cartCount = 2; // Временно
-    const { cartItems } = useContext(CartContext);
+    const cartCount = 2;
+    // const { cartItems } = useContext(CartContext);
+    const { totalCount } = useContext(CartContext);
 
     return (
         <header className={styles.header}>
@@ -20,7 +21,7 @@ export const Header = () => {
                 <nav className={styles.menu}>
                     <FavoriteIcon count={cartCount} />
 
-                    <CartIcon count={cartItems.length} />
+                    <CartIcon count={totalCount} />
                 </nav>
             </div>
         </header>

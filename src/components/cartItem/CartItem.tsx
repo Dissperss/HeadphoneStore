@@ -2,38 +2,53 @@
 // Потом подставляем headphones.title/price/img итд.
 import { DeleteIcon } from "../icons";
 import { QuantityBtnMinus, QuantityBtnPlus } from "../icons";
-import appleByzS852 from "../../assets/img/apple_byz_s852ipng.png";
+import { CartContext, type CartItemType } from "../../context/cart/cartContext";
+// import appleByzS852 from "../../assets/img/apple_byz_s852ipng.png";
 
 import styles from "./CartItem.module.css";
+import { useContext } from "react";
 
-export const CartItem = () => {
+type CartItemProps = {
+    item: CartItemType;
+};
+
+export const CartItem = ({ item }: CartItemProps) => {
+    const { title, price, img, quantity } = item;
+    const { increaseQuantity, decreaseQuantity, removeFromCart } =
+        useContext(CartContext);
+
     return (
         <div className={styles.cart__item}>
             <div className={styles.item__inner}>
-                <img
-                    src={appleByzS852}
-                    alt="earpods"
-                    className={styles.item__img}
-                />
+                <img src={img} alt={title} className={styles.item__img} />
                 <div className={styles.item__quantity}>
-                    <button className={styles.quantity__btn}>
+                    <button
+                        onClick={() => decreaseQuantity(item.id)}
+                        className={styles.quantity__btn}
+                    >
                         <QuantityBtnMinus />
                     </button>
-                    <span className={styles.quantity__value}>1</span>
-                    <button className={styles.quantity__btn}>
+                    <span className={styles.quantity__value}>{quantity}</span>
+                    <button
+                        onClick={() => increaseQuantity(item.id)}
+                        className={styles.quantity__btn}
+                    >
                         <QuantityBtnPlus />
                     </button>
                 </div>
             </div>
             <div className={styles.item__info}>
-                <h3 className={styles.item__title}>Apple BYZ S852I</h3>
-                <span className={styles.item__price}>2 927 ₽</span>
+                <h3 className={styles.item__title}>{title}</h3>
+                <span className={styles.item__price}>{price}</span>
             </div>
             <div className={styles.item__sidebar}>
-                <button className={styles.item__delete_btn}>
+                <button
+                    onClick={() => removeFromCart(item.id)}
+                    className={styles.item__delete_btn}
+                >
                     <DeleteIcon />
                 </button>
-                <span className={styles.item__sum}> 2 927 ₽</span>
+                <span className={styles.item__sum}>{price * quantity}</span>
             </div>
         </div>
     );
