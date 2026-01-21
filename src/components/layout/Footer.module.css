@@ -30,6 +30,13 @@
     text-decoration: none;
 }
 
+.footer__tools {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
 .condition {
     font-weight: 400;
     font-size: 17px;
@@ -37,9 +44,8 @@
 }
 
 .languages {
-    margin-top: 35px;
     display: flex;
-    gap: 17px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -47,12 +53,14 @@
     color: #ffa542;
 }
 
-.languages__eng {
+.languages__eng,
+.languages__kaz {
     color: #101010;
 }
 
 .languages__ru,
-.languages__eng {
+.languages__eng,
+.languages__kaz {
     font-weight: 500;
     font-size: 15px;
 }

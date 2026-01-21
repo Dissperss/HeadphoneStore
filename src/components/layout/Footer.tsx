@@ -25,6 +25,7 @@ export const Footer = () => {
                     <span className={styles.condition}>Условия сервиса</span>
                     <div className={styles.languages}>
                         <EarthIcon />
+                        <span className={styles.languages__kaz}>Каз</span>
                         <span className={styles.languages__ru}>Рус</span>
                         <span className={styles.languages__eng}>Eng</span>
                     </div>
