@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-:root {
+html {
+    scrollbar-gutter: stable;
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     /* Нужен Montseratt */
     line-height: 1.5;
@@ -10,12 +11,15 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --gray: #838383;
 }
 
 #root {
@@ -64,7 +68,8 @@ button {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1240px;
+    padding: 0 20px;
     width: 100%;
     margin: 0 auto;
 }
