@@ -1,5 +1,6 @@
-/* .footer {
-} */
+.footer {
+    margin-top: 20px;
+}
 
 .footer__inner {
     background-color: #fff;

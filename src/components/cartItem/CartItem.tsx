@@ -2,11 +2,11 @@
 // Потом подставляем headphones.title/price/img итд.
 import { DeleteIcon } from "../icons";
 import { QuantityBtnMinus, QuantityBtnPlus } from "../icons";
-import { CartContext, type CartItemType } from "../../context/cart/cartContext";
+import { useCart } from "../../hooks";
 // import appleByzS852 from "../../assets/img/apple_byz_s852ipng.png";
 
 import styles from "./CartItem.module.css";
-import { useContext } from "react";
+import type { CartItemType } from "../../types/cart";
 
 type CartItemProps = {
     item: CartItemType;
@@ -14,8 +14,7 @@ type CartItemProps = {
 
 export const CartItem = ({ item }: CartItemProps) => {
     const { title, price, img, quantity } = item;
-    const { increaseQuantity, decreaseQuantity, removeFromCart } =
-        useContext(CartContext);
+    const { increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
 
     return (
         <div className={styles.cart__item}>
@@ -39,7 +38,7 @@ export const CartItem = ({ item }: CartItemProps) => {
             </div>
             <div className={styles.item__info}>
                 <h3 className={styles.item__title}>{title}</h3>
-                <span className={styles.item__price}>{price}</span>
+                <span className={styles.item__price}>{price} ₽</span>
             </div>
             <div className={styles.item__sidebar}>
                 <button
@@ -48,7 +47,7 @@ export const CartItem = ({ item }: CartItemProps) => {
                 >
                     <DeleteIcon />
                 </button>
-                <span className={styles.item__sum}>{price * quantity}</span>
+                <span className={styles.item__sum}>{price * quantity} ₽</span>
             </div>
         </div>
     );
