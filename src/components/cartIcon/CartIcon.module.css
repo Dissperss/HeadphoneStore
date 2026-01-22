@@ -5,7 +5,7 @@
 
 .badge {
     position: absolute;
-    top: -9px;
+    top: -8px;
     right: -12px;
     font-weight: var(--fw-medium);
     font-size: var(--fs-sm);
@@ -13,7 +13,7 @@
     color: #fff;
     border-radius: 100%;
     background-color: var(--orange);
-    max-width: 24px;
+    max-width: 23px;
     width: 100%;
     opacity: 0;
     transform: scale(0.6);
