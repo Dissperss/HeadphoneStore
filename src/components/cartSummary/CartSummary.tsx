@@ -8,7 +8,9 @@ export const CartSummary = () => {
         <div className={styles.cart__summary}>
             <div className={styles.cart__header}>
                 <span className={styles.cart__text}>итого</span>
-                <span className={styles.cart__result_sum}>{totalPrice} ₽</span>
+                <span key={totalPrice} className={styles.cart__result_sum}>
+                    {totalPrice} ₽
+                </span>
             </div>
             <button className={styles.checkout__btn}>
                 Перейти к оформлению

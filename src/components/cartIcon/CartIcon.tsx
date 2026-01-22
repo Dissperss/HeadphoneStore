@@ -20,7 +20,13 @@ export const CartIcon = ({ count }: CartIconProps) => {
                     fill="currentColor"
                 />
             </svg>
-            {count > 0 && <span className={styles.badge}>{count}</span>}
+            {count > 0 && (
+                <span
+                    className={`${styles.badge} ${count > 0 ? styles.badgeVisible : ""}`}
+                >
+                    {count}
+                </span>
+            )}
         </Link>
     );
 };

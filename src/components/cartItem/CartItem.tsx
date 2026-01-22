@@ -24,7 +24,9 @@ export const CartItem = ({ item }: CartItemProps) => {
                     >
                         <QuantityBtnMinus />
                     </button>
-                    <span className={styles.quantity__value}>{quantity}</span>
+                    <span key={quantity} className={styles.quantity__value}>
+                        {quantity}
+                    </span>
                     <button
                         onClick={() => increaseQuantity(item.id)}
                         className={styles.quantity__btn}
@@ -44,7 +46,9 @@ export const CartItem = ({ item }: CartItemProps) => {
                 >
                     <DeleteIcon />
                 </button>
-                <span className={styles.item__sum}>{price * quantity} ₽</span>
+                <span key={price * quantity} className={styles.item__sum}>
+                    {price * quantity} ₽
+                </span>
             </div>
         </div>
     );
