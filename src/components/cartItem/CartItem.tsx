@@ -22,6 +22,9 @@ export const CartItem = ({ item }: CartItemProps) => {
                         onClick={() => decreaseQuantity(item.id)}
                         className={styles.quantity__btn}
                         disabled={quantity === 1}
+                        title={
+                            quantity === 1 ? "Минимальное количество — 1" : ""
+                        }
                     >
                         <QuantityBtnMinus />
                     </button>
