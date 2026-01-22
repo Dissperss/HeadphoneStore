@@ -1,0 +1,26 @@
+.empty {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.title {
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-lg);
+}
+
+.text {
+    font-size: var(--fs-sm);
+    color: var(--gray);
+}
+
+.link {
+    margin-top: 10px;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-medium);
+    color: var(--orange);
+    text-decoration: none;
+}
