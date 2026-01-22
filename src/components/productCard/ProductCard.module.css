@@ -40,7 +40,7 @@
 .card__title {
     font-weight: 600;
     font-size: 17px;
-    color: #1c1c27;
+    color: var(--light-black);
 }
 
 .card__prices {
@@ -52,7 +52,7 @@
 .card__price_actual {
     font-weight: 600;
     font-size: 17px;
-    color: #ffa542;
+    color: var(--orange);
 }
 
 .card__price_old {
@@ -78,7 +78,7 @@
 .card__rating {
     font-weight: 600;
     font-size: 17px;
-    color: #838383;
+    color: var(--gray);
 }
 
 .card__btn {

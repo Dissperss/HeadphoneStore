@@ -6,7 +6,7 @@
 .title {
     font-weight: 600;
     font-size: 20px;
-    color: #1c1c27;
+    color: var(--light-black);
 }
 
 .cart__wrapper {

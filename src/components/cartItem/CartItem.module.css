@@ -54,7 +54,7 @@
 .item__title {
     font-weight: 500;
     font-size: 17px;
-    color: #1c1c27;
+    color: var(--light-black);
 }
 
 .item__price {
@@ -84,5 +84,5 @@
     font-weight: 600;
     font-size: 15px;
     text-align: right;
-    color: #1c1c27;
+    color: var(--light-black);
 }

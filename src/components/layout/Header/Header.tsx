@@ -1,9 +1,9 @@
 // import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useCart } from "../../hooks";
-import { CartIcon } from "../cartIcon";
-import { FavoriteIcon } from "../favoriteIcon";
-import { MainLogo } from "../icons";
+import { useCart } from "../../../hooks";
+import { CartIcon } from "../../cartIcon";
+import { FavoriteIcon } from "../../favoriteIcon";
+import { MainLogo } from "../../icons";
 import styles from "./Header.module.css";
 
 export const Header = () => {

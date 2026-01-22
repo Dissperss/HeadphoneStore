@@ -1,9 +1,6 @@
-// import { headphones } from "../../stabs/products";
-// Потом подставляем headphones.title/price/img итд.
 import { DeleteIcon } from "../icons";
 import { QuantityBtnMinus, QuantityBtnPlus } from "../icons";
 import { useCart } from "../../hooks";
-// import appleByzS852 from "../../assets/img/apple_byz_s852ipng.png";
 
 import styles from "./CartItem.module.css";
 import type { CartItemType } from "../../types/cart";

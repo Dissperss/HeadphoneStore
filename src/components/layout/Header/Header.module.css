@@ -8,12 +8,6 @@
     align-items: center;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 25px;
-    color: #101010;
-}
-
 .menu {
     display: flex;
     gap: 25px;

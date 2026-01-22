@@ -4,8 +4,7 @@
 
 html {
     scrollbar-gutter: stable;
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    /* Нужен Montseratt */
+
     line-height: 1.5;
     font-weight: 400;
 
@@ -20,6 +19,10 @@ html {
 
 :root {
     --gray: #838383;
+    --black: #101010;
+    --light-black: #1c1c27;
+    --orange: #ffa542;
+    --font-family: "Montserrat", sans-serif;
 }
 
 #root {
@@ -47,6 +50,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
     background-color: #eaeaea;
+    font-family: var(--font-family);
 }
 
 h1,

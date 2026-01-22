@@ -15,7 +15,7 @@
 .title {
     font-weight: 700;
     font-size: 25px;
-    color: #101010;
+    color: var(--black);
 }
 
 .footer__menu {
@@ -51,12 +51,12 @@
 }
 
 .languages__ru {
-    color: #ffa542;
+    color: var(--orange);
 }
 
 .languages__eng,
 .languages__kaz {
-    color: #101010;
+    color: var(--black);
 }
 
 .languages__ru,

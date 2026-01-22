@@ -1,6 +1,6 @@
 .favorites {
     position: relative;
-    color: #838383;
+    color: var(--gray);
     border: 1px;
 }
 
@@ -13,7 +13,7 @@
     text-align: center;
     color: #fff;
     border-radius: 100%;
-    background-color: #ffa542;
+    background-color: var(--orange);
     max-width: 20px;
     width: 100%;
 }
