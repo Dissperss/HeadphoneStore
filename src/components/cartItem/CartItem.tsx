@@ -21,6 +21,7 @@ export const CartItem = ({ item }: CartItemProps) => {
                     <button
                         onClick={() => decreaseQuantity(item.id)}
                         className={styles.quantity__btn}
+                        disabled={quantity === 1}
                     >
                         <QuantityBtnMinus />
                     </button>
