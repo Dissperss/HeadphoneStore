@@ -4,8 +4,8 @@ import styles from "./Footer.module.css";
 
 export const Footer = () => {
     return (
-        <footer className={styles.footer}>
-            <div className={`container ${styles.footer__inner}`}>
+        <footer className={`container ${styles.footer}`}>
+            <div className={styles.footer__inner}>
                 <Link to="/">
                     <MainLogo />
                 </Link>

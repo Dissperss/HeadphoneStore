@@ -8,8 +8,8 @@
     position: absolute;
     top: -10px;
     right: -11px;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
     text-align: center;
     color: #fff;
     border-radius: 100%;

@@ -3,14 +3,14 @@
 }
 
 .title {
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-lg);
     color: var(--gray);
 }
 
 .subtitle {
     margin-top: 15px;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-lg);
     color: var(--gray);
 }

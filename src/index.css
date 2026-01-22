@@ -23,6 +23,11 @@ html {
     --light-black: #1c1c27;
     --orange: #ffa542;
     --font-family: "Montserrat", sans-serif;
+    --fs-sm: 15px;
+    --fs-md: 17px;
+    --fs-lg: 20px;
+    --fw-medium: 500;
+    --fw-semibold: 600;
 }
 
 #root {
@@ -36,7 +41,7 @@ main {
 }
 
 a {
-    font-weight: 500;
+    font-weight: var(--fw-medium);
     color: #646cff;
     text-decoration: inherit;
 }

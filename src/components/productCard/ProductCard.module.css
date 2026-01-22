@@ -38,8 +38,8 @@
 }
 
 .card__title {
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-md);
     color: var(--light-black);
 }
 
@@ -50,13 +50,13 @@
 }
 
 .card__price_actual {
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-md);
     color: var(--orange);
 }
 
 .card__price_old {
-    font-weight: 600;
+    font-weight: var(--fw-semibold);
     font-size: 13px;
     text-decoration: line-through;
     color: #ffce7f;
@@ -76,15 +76,15 @@
 }
 
 .card__rating {
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-md);
     color: var(--gray);
 }
 
 .card__btn {
     background: none;
     border: none;
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-md);
     color: #000;
 }

@@ -12,8 +12,8 @@ export const Header = () => {
     const { totalCount } = useCart();
 
     return (
-        <header className={styles.header}>
-            <div className={`container ${styles.header__inner}`}>
+        <header className={`container ${styles.header}`}>
+            <div className={styles.header__inner}>
                 <Link to="/">
                     <MainLogo />
                 </Link>

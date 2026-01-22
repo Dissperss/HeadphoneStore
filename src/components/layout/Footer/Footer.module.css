@@ -12,12 +12,6 @@
     align-items: flex-start;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 25px;
-    color: var(--black);
-}
-
 .footer__menu {
     display: flex;
     flex-direction: column;
@@ -26,7 +20,7 @@
 
 .menu__link {
     font-weight: 400;
-    font-size: 17px;
+    font-size: var(--fs-md);
     color: #000;
     text-decoration: none;
 }
@@ -40,7 +34,7 @@
 
 .condition {
     font-weight: 400;
-    font-size: 17px;
+    font-size: var(--fs-md);
     color: #000;
 }
 
@@ -62,8 +56,8 @@
 .languages__ru,
 .languages__eng,
 .languages__kaz {
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
 }
 
 .footer__socials {
