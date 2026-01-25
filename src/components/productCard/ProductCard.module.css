@@ -7,12 +7,19 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 20px 26px;
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 15px;
+    }
 }
 
 .card__inner {
     display: flex;
     gap: 55px;
     flex-direction: column;
+    @media (max-width: 768px) {
+        gap: 30px;
+    }
 }
 
 .card__img_wrapper {
@@ -20,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .card__img {
@@ -87,4 +95,11 @@
     font-weight: var(--fw-semibold);
     font-size: var(--fs-md);
     color: #000;
+
+    @media screen {
+    }
+}
+
+.card__btn:active {
+    outline: 1px solid var(--gray);
 }

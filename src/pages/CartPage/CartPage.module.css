@@ -14,6 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 1024px) {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 .cart__list {
@@ -22,9 +27,15 @@
     gap: 20px;
     max-width: 630px;
     width: 100%;
+    @media (max-width: 1024px) {
+        text-align: center;
+    }
 }
 
 .cart__summary {
     max-width: 350px;
     width: 100%;
+    @media (max-width: 1024px) {
+        max-width: 100%;
+    }
 }
