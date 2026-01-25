@@ -95,11 +95,17 @@
     font-weight: var(--fw-semibold);
     font-size: var(--fs-md);
     color: #000;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        color 0.15s ease;
+}
 
-    @media screen {
-    }
+.card__btn:hover {
+    color: var(--orange);
 }
 
 .card__btn:active {
-    outline: 1px solid var(--gray);
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) inset;
 }
