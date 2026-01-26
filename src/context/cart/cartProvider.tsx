@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { useState } from "react";
 import type { CartContextType } from "./cartContext";
 import { CartContext } from "./cartContext";
-import type { CartItemType } from "../../types/cart";
+import type { CartItemType } from "@/types/cart";
 
 type Props = {
     children: ReactNode;

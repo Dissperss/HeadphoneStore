@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import type { CartItemType } from "../../types/cart";
+import type { CartItemType } from "@/types/cart";
 
 export type CartContextType = {
     cartItems: CartItemType[];

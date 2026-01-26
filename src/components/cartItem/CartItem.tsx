@@ -1,9 +1,9 @@
 import { DeleteIcon } from "../icons";
 import { QuantityBtnMinus, QuantityBtnPlus } from "../icons";
-import { useCart } from "../../hooks";
+import { useCart } from "@/hooks";
 
 import styles from "./CartItem.module.css";
-import type { CartItemType } from "../../types/cart";
+import type { CartItemType } from "@/types/cart";
 
 type CartItemProps = {
     item: CartItemType;

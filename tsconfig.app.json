@@ -25,7 +25,11 @@
         "noUncheckedSideEffectImports": true,
         "paths": {
             "@/components/*": ["./src/components/*"],
-            "@/context/*": ["./src/context/*"]
+            "@/context/*": ["./src/context/*"],
+            "@/types/*": ["./src/types/*"],
+            "@/hooks": ["./src/hooks/index.ts"],
+            "@/icons": ["./src/components/icons/index.ts"],
+            "@/stabs/*": ["./src/stabs/products.ts"]
         }
     },
 

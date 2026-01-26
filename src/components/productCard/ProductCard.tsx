@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { StarIcon } from "../icons";
 
-import { CartContext } from "../../context/cart/cartContext";
+import { CartContext } from "@/context/cart/cartContext";
 import styles from "./ProductCard.module.css";
 
 type ProductCardProps = {

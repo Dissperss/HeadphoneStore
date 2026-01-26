@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { EarthIcon, VkIcon, TgIcon, WhatsUpIcon, MainLogo } from "../../icons";
+import { EarthIcon, VkIcon, TgIcon, WhatsUpIcon, MainLogo } from "@/icons";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
