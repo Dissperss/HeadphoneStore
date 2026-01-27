@@ -1,6 +1,6 @@
-import { CartItem } from "@/components/cartItem";
-import { CartSummary } from "@/components/cartSummary";
-import { EmptyCart } from "@/components/emptyCart";
+import { CartItem } from "@/components/cart/cartItem";
+import { CartSummary } from "@/components/cart/cartSummary";
+import { EmptyCart } from "@/components/cart/emptyCart";
 import { useCart } from "@/hooks";
 
 import styles from "./CartPage.module.css";

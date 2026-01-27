@@ -1,8 +1,7 @@
-// import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useCart } from "@/hooks";
-import { CartIcon } from "@/components/cartIcon";
-import { FavoriteIcon } from "@/components/favoriteIcon";
+import { CartIcon } from "@/components/cart/cartIcon";
+import { FavoriteIcon } from "@/components/layout/Header/favoriteIcon";
 import { MainLogo } from "@/icons/index";
 import styles from "./Header.module.css";
 
