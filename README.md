@@ -66,4 +66,5 @@ npm run dev
 ## Автор
 
 Frontend Developer  
+GitHub repository: https://github.com/Dissperss/HeadphoneStore
 GitHub: https://github.com/Dissperss
