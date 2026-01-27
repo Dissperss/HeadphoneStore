@@ -8,7 +8,6 @@ export function Layout() {
             <Header />
 
             <main className="container">
-                {/* The child route element will be rendered here */}
                 <Outlet />
             </main>
 

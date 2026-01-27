@@ -8,7 +8,6 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
     const cartCount = 2;
-    // const { cartItems } = useContext(CartContext);
     const { totalCount } = useCart();
 
     return (
