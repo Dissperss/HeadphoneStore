@@ -13,9 +13,26 @@ export const CartItem = ({ item }: CartItemProps) => {
     const { increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
 
     return (
-        <div className={styles.cart__item}>
-            <div className={styles.item__inner}>
-                <img src={img} alt={title} className={styles.item__img} />
+        <div className={styles.cart__container}>
+            <div className={styles.cart__item}>
+                <div className={styles.item__inner}>
+                    <img src={img} alt={title} className={styles.item__img} />
+                </div>
+                <div className={styles.item__info}>
+                    <h3 className={styles.item__title}>{title}</h3>
+                    <span className={styles.item__price}>{price} ₽</span>
+                </div>
+                <div className={styles.item__sidebar}>
+                    <button
+                        onClick={() => removeFromCart(item.id)}
+                        className={styles.item__delete_btn}
+                    >
+                        <DeleteIcon />
+                    </button>
+                </div>
+            </div>
+
+            <div className={styles.cart__footer}>
                 <div className={styles.item__quantity}>
                     <button
                         onClick={() => decreaseQuantity(item.id)}
@@ -37,18 +54,6 @@ export const CartItem = ({ item }: CartItemProps) => {
                         <QuantityBtnPlus />
                     </button>
                 </div>
-            </div>
-            <div className={styles.item__info}>
-                <h3 className={styles.item__title}>{title}</h3>
-                <span className={styles.item__price}>{price} ₽</span>
-            </div>
-            <div className={styles.item__sidebar}>
-                <button
-                    onClick={() => removeFromCart(item.id)}
-                    className={styles.item__delete_btn}
-                >
-                    <DeleteIcon />
-                </button>
                 <span key={price * quantity} className={styles.item__sum}>
                     {price * quantity} ₽
                 </span>

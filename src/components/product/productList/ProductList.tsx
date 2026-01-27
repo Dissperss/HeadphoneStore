@@ -1,4 +1,4 @@
-import { ProductCard } from "@/components/productCard";
+import { ProductCard } from "@/components/product/productCard";
 import styles from "./ProductList.module.css";
 
 type Product = {

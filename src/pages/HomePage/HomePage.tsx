@@ -1,4 +1,4 @@
-import { ProductList } from "@/components/productList";
+import { ProductList } from "@/components/product/productList";
 import { headphones } from "@/stabs/products";
 import styles from "./HomePage.module.css";
 

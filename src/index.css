@@ -32,10 +32,6 @@ html {
     --fs-lg: 20px;
     --fw-medium: 500;
     --fw-semibold: 600;
-    /* --bp-desktop: 1240px;
-    --bp-laptop: 1024px;
-    --bp-tablet: 768px;
-    --bp-mobile: 480px; */
 }
 
 #root {
