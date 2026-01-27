@@ -30,8 +30,11 @@
 .item__quantity {
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 45px;
     align-items: center;
+    @media (max-width: 768px) {
+        gap: 40px;
+    }
 }
 
 .quantity__btn {
