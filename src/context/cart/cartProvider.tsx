@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
-import type { CartContextType } from "./cartContext";
-import { CartContext } from "./cartContext";
+import type { CartContextType } from "@/context/cart/cartContext";
+import { CartContext } from "@/context/cart/cartContext";
 import type { CartItemType } from "@/types/cart";
 
 type Props = {

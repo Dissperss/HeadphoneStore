@@ -1,10 +1,11 @@
-import { ProductCard } from "../productCard";
+import { ProductCard } from "@/components/productCard";
 import styles from "./ProductList.module.css";
 
 type Product = {
     id: number;
     img: string;
     title: string;
+    description: string;
     price: {
         actual: number;
         previous?: number;
@@ -33,6 +34,7 @@ export const ProductList = ({ data }: ProductListProps) => {
                     <ProductCard
                         id={product.id}
                         img={product.img}
+                        description={product.description}
                         title={product.title}
                         price={product.price}
                         rate={product.rate}
