@@ -15,7 +15,7 @@
 
 .modal {
     position: relative;
-    background: #fff;
+    background: var(--white);
     border-radius: 20px;
     padding: 24px;
     max-width: 600px;
@@ -70,7 +70,7 @@
 
     font-size: 22px;
     line-height: 1;
-    color: #999;
+    color: var(--semi-gray);
 
     cursor: pointer;
 
@@ -86,7 +86,7 @@
 
 .close:hover {
     background-color: rgba(0, 0, 0, 0.06);
-    color: #000;
+    color: var(--black);
 }
 
 .close:active {

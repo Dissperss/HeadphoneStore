@@ -19,9 +19,13 @@ html {
 
 :root {
     --gray: #838383;
+    --light-gray: #aaa;
+    --semi-gray: #999;
     --black: #101010;
     --light-black: #1c1c27;
+    --white: #fff;
     --orange: #ffa542;
+    --light-orange: #ffce7f;
     --font-family: "Montserrat", sans-serif;
     --fs-sm: 15px;
     --fs-md: 17px;

@@ -6,7 +6,7 @@
     gap: 25px;
     border-radius: 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: var(--white);
     padding: 20px 25px 20px 18px;
 }
 
@@ -44,7 +44,7 @@
 .quantity__value {
     font-weight: var(--fw-semibold);
     font-size: var(--fs-md);
-    color: #000;
+    color: var(--black);
     animation: fadeScale 0.2s ease;
 }
 
@@ -80,7 +80,7 @@
 .item__price {
     font-weight: var(--fw-semibold);
     font-size: var(--fs-sm);
-    color: #aaa;
+    color: var(--light-gray);
 }
 
 .item__sidebar {

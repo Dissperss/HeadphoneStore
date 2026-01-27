@@ -2,7 +2,7 @@
     height: 400px;
     border-radius: 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,7 +75,7 @@
     font-weight: var(--fw-semibold);
     font-size: 13px;
     text-decoration: line-through;
-    color: #ffce7f;
+    color: var(--light-orange);
 }
 
 .card__footer {
@@ -101,7 +101,7 @@
     border: none;
     font-weight: var(--fw-semibold);
     font-size: var(--fs-md);
-    color: #000;
+    color: var(--black);
     transition:
         transform 0.15s ease,
         box-shadow 0.15s ease,

@@ -10,7 +10,7 @@
     font-weight: var(--fw-medium);
     font-size: var(--fs-sm);
     text-align: center;
-    color: #fff;
+    color: var(--white);
     border-radius: 100%;
     background-color: var(--orange);
     max-width: 23px;
@@ -28,6 +28,6 @@
 }
 
 .cart:hover {
-    color: black;
+    color: var(--black);
     transition: 0.5s all;
 }

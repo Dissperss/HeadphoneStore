@@ -4,7 +4,7 @@
     gap: 15px;
     border-radius: 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: var(--white);
     padding: 20px 20px 0 20px;
 }
 
@@ -18,7 +18,7 @@
 .cart__result_sum {
     font-weight: var(--fw-semibold);
     font-size: var(--fs-sm);
-    color: #000;
+    color: var(--black);
 }
 
 .cart__result_sum {
@@ -46,6 +46,6 @@
     font-weight: var(--fw-semibold);
     font-size: var(--fs-md);
     text-align: center;
-    color: #fff;
+    color: var(--white);
     padding: 22px 0;
 }
