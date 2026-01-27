@@ -54,9 +54,7 @@ export const CartItem = ({ item }: CartItemProps) => {
                         <QuantityBtnPlus />
                     </button>
                 </div>
-                <span key={price * quantity} className={styles.item__sum}>
-                    {price * quantity} ₽
-                </span>
+                <span className={styles.item__sum}>{price * quantity} ₽</span>
             </div>
         </div>
     );

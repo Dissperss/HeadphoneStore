@@ -1,4 +1,2 @@
-import { HomePage } from "./HomePage/HomePage";
-import { CartPage } from "./CartPage/CartPage";
-
-export { HomePage, CartPage };
+export { HomePage } from "./HomePage/HomePage";
+export { CartPage } from "./CartPage/CartPage";

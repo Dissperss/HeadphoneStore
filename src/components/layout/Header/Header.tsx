@@ -3,16 +3,18 @@ import { useCart } from "@/hooks";
 import { CartIcon } from "@/components/cart/cartIcon";
 import { FavoriteIcon } from "@/components/layout/Header/favoriteIcon";
 import { MainLogo } from "@/icons/index";
+import { routes } from "@/router/routes";
 import styles from "./Header.module.css";
 
+const cartCount = 2;
+
 export const Header = () => {
-    const cartCount = 2;
     const { totalCount } = useCart();
 
     return (
         <header className={`container ${styles.header}`}>
             <div className={styles.header__inner}>
-                <Link to="/">
+                <Link to={routes.Home}>
                     <MainLogo />
                 </Link>
                 <nav className={styles.menu}>

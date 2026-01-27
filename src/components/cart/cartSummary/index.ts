@@ -1,3 +1,1 @@
-import { CartSummary } from "./CartSummary";
-
-export { CartSummary };
+export { CartSummary } from "./CartSummary";

@@ -6,13 +6,15 @@ import {
     WhatsUpIcon,
     MainLogo,
 } from "@/icons/index";
+import { routes } from "@/router/routes";
+
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
     return (
         <footer className={`container ${styles.footer}`}>
             <div className={styles.footer__inner}>
-                <Link to="/">
+                <Link to={routes.Home}>
                     <MainLogo />
                 </Link>
 
@@ -20,7 +22,7 @@ export const Footer = () => {
                     <a href="#" className={styles.menu__link}>
                         Избранное
                     </a>
-                    <Link to="/cart" className={styles.menu__link}>
+                    <Link to={routes.Cart} className={styles.menu__link}>
                         Корзина
                     </Link>
                     <a href="#" className={styles.menu__link}>
@@ -31,9 +33,11 @@ export const Footer = () => {
                     <span className={styles.condition}>Условия сервиса</span>
                     <div className={styles.languages}>
                         <EarthIcon />
-                        <span className={styles.languages__kaz}>Каз</span>
-                        <span className={styles.languages__ru}>Рус</span>
-                        <span className={styles.languages__eng}>Eng</span>
+                        <span className={styles.language}>Каз</span>
+                        <span className={`${styles.language} ${styles.active}`}>
+                            Рус
+                        </span>
+                        <span className={styles.language}>Eng</span>
                     </div>
                 </div>
                 <div className={styles.footer__socials}>

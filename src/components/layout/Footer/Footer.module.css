@@ -51,20 +51,14 @@
     align-items: center;
 }
 
-.languages__ru {
-    color: var(--orange);
-}
-
-.languages__eng,
-.languages__kaz {
+.language {
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
     color: var(--black);
 }
 
-.languages__ru,
-.languages__eng,
-.languages__kaz {
-    font-weight: var(--fw-medium);
-    font-size: var(--fs-sm);
+.active {
+    color: var(--orange);
 }
 
 .footer__socials {

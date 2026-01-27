@@ -1,3 +1,1 @@
-import { CartIcon } from "./CartIcon";
-
-export { CartIcon };
+export { CartIcon } from "./CartIcon";

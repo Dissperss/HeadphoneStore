@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { routes } from "@/router/routes";
+
 import styles from "./CartIcon.module.css";
 
 type CartIconProps = {
@@ -7,7 +9,7 @@ type CartIconProps = {
 
 export const CartIcon = ({ count }: CartIconProps) => {
     return (
-        <Link to="/cart" className={styles.cart}>
+        <Link to={routes.Cart} className={styles.cart}>
             <svg
                 width="24"
                 height="24"
@@ -21,9 +23,7 @@ export const CartIcon = ({ count }: CartIconProps) => {
                 />
             </svg>
             {count > 0 && (
-                <span
-                    className={`${styles.badge} ${count > 0 ? styles.badgeVisible : ""}`}
-                >
+                <span className={`${styles.badge} ${styles.badgeVisible}`}>
                     {count}
                 </span>
             )}

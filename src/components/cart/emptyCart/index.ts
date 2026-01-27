@@ -1,3 +1,1 @@
-import { EmptyCart } from "./EmptyCart";
-
-export { EmptyCart };
+export { EmptyCart } from "./EmptyCart";

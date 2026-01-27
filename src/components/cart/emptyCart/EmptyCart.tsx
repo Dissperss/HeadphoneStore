@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { routes } from "@/router/routes";
+
 import styles from "./EmptyCart.module.css";
 
 export const EmptyCart = () => {
@@ -8,7 +10,7 @@ export const EmptyCart = () => {
             <p className={styles.text}>
                 Добавьте товары, чтобы продолжить покупки
             </p>
-            <Link to="/" className={styles.link}>
+            <Link to={routes.Home} className={styles.link}>
                 Вернуться к каталогу
             </Link>
         </div>
